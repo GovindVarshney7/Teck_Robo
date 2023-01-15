@@ -1,0 +1,232 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+
+}
+
+#main {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    font-family: gilroy;
+    background-color: #f9fafc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.page1 {
+    height: 95%;
+    width: 90%;
+    display: flex;
+    background-color: #e3ebf6;
+    border-radius: 25px;
+    overflow: hidden;
+}
+
+.left {
+    width: 50%;
+    height: 100%;
+    /* background-color: aquamarine; */
+    /* padding: 5vw; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.leftIn {
+    width: 50%;
+    height: 90%;
+    color: #4c556e;
+    /* background-color: blueviolet; */
+}
+
+.leftIn h1 {
+
+    font-weight: 700;
+    border: none;
+    margin-bottom: 1.3vw;
+    margin-top: 1vw;
+    letter-spacing: 1px;
+    /* text-decoration: none; */
+}
+
+.leftIn h4 {
+
+    letter-spacing: 1px;
+    /* word-spacing: 2px; */
+    font-size: 1vw;
+    font-weight: 400;
+    margin-bottom: 3.8vw;
+
+}
+
+.div {
+    width: 100%;
+    height: 2.8vw;
+    border-radius: 12px;
+    outline: none;
+    /* border: none; */
+    border: 1px solid gray;
+    padding: 10px;
+    margin-bottom: 1.2vw;
+
+}
+
+#login {
+    font-size: 1.1vw;
+    font-weight: 600;
+    /* color: white ; */
+    background-color: #445379;
+    color: white;
+    cursor: pointer;
+}
+
+.middle {
+    width: 100%;
+    margin-bottom: 2vw;
+    display: flex;
+    justify-content: space-between;
+    text-transform: uppercase;
+}
+
+.middleDiv {
+    width: 45%;
+    height: 11px;
+    border-bottom: 2px solid #b0b3b8;
+
+}
+
+.google {
+    text-align: center;
+    color: #445379;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1vw;
+    font-weight: 600;
+}
+
+.ri-google-fill {
+    margin-right: 8px;
+}
+
+.googleA {
+    /* font-size: ; */
+    /* display: inline-block; */
+    color: #445379;
+    text-decoration: none;
+}
+
+.forgot {
+    color: #445379;
+    text-decoration: none;
+    font-size: 1vw;
+}
+
+.forgot p {
+    margin-bottom: 0.5vw;
+}
+
+.lastDiv {
+    height: 2vw;
+    text-decoration: none;
+    font-size: 1vw;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1vw;
+    text-align: center;
+}
+
+.lastDiv a {
+    padding: 3px 8px;
+    border: 1px solid black;
+    color: #445379;
+    border-radius: 10px;
+    background-color: aliceblue;
+
+}
+
+.right {
+    width: 50%;
+    height: 100%;
+    /* background-color: aquamarine; */
+    /* padding: 5vw; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("https://static.vecteezy.com/system/resources/previews/002/909/679/non_2x/abstract-dark-blue-geometric-polygonal-background-free-vector.jpg");
+    background-size: cover;
+    /* background-position: center; */
+    
+}
+.rightIn{
+    height: 100%;
+    width: 100%;
+    background-color: #4a5d8d98;
+    /* border-radius: 25px; */display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.righInIn{
+    height: 80%;
+    width: 68%;
+    background-color: #758cc7;
+    border-radius: 25px;
+    position: relative;
+    padding: 4vw;
+    color: white;
+}
+.circle{
+    position: absolute;
+    width: 5vw;
+    height: 5vw;
+    background-color: whitesmoke;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    
+}
+.circle1{
+    top: 70%;
+    left: -7%;
+}
+.circle2{
+    top: 37%;
+    right: -7%;
+}
+.pic{
+    position: absolute;
+    height:94vh ;
+    width: 37vw;
+    left: 3%;
+    /* background-color: #445379; */
+    bottom:0;
+    background-size: cover;
+
+    background-image: url("govind(3).png");
+}
+.close{
+    height: 2vw;
+    width: 2vw;
+    position: absolute;
+    right: 2%;
+    top: 5%;
+    font-size: 0.9vw;
+    /* background-color: red; */
+    font-size: 1.3vw;
+    border-radius: 50%;
+}
+.close a{
+    text-decoration: none;
+}
