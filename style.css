@@ -1,52 +1,67 @@
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
-html,body{
+
+html,
+body {
     height: 100%;
     width: 100%;
 }
-#minWidth{
+
+#minWidth {
     display: none;
 }
+
 @font-face {
     font-family: font1Regular;
-    src: url("/fonts/Gilroy-Regular.ttf");
+    src: url("fonts/Gilroy-Regular.ttf");
 }
+
 @font-face {
     font-family: font1Light;
-    src: url("/fonts/Gilroy-Light.ttf");
+    src: url("fonts/Gilroy-Light.ttf");
 }
+
 @font-face {
     font-family: font1Bold;
-    src: url("/fonts/Gilroy-Bold.ttf");
+    src: url("fonts/Gilroy-Bold.ttf");
 }
+
+@font-face {
+    font-family: font1semiBold;
+    src: url("fonts/Gilroy-SemiBold.ttf");
+}
+
 @font-face {
     font-family: font1ExtraBold;
-    src: url("/fonts/Gilroy-ExtraBold.ttf");
+    src: url("fonts/Gilroy-ExtraBold.ttf");
 }
+
 @font-face {
     font-family: font1Heavy;
-    src: url("/fonts/Gilroy-Heavy.ttf");
+    src: url("fonts/Gilroy-Heavy.ttf");
 }
+
 @font-face {
     font-family: font1Medium;
-    src: url("/fonts/Gilroy-Medium.ttf");
+    src: url("fonts/Gilroy-Medium.ttf");
 }
-#main{
-    height:100%;
-    width:100%;
+
+#main {
+    height: 100%;
+    width: 100%;
     font-family: font1Regular;
-    
+
     overflow-x: hidden;
-    
+
     background-image: url("https://t4.ftcdn.net/jpg/02/37/70/43/360_F_237704345_fd2ShRUVs4Eb1o9iABT8arNtmuhGVAL1.jpg");
     background-size: cover;
     background-position: bottom;
 }
 
-#nav{
+#nav {
     height: 6vw;
     display: flex;
     justify-content: space-between;
@@ -54,81 +69,89 @@ html,body{
     padding-left: 100px;
     padding-right: 100px;
     overflow-x: hidden;
-    color:rgba(245, 245, 245, 0.76);
+    color: rgba(245, 245, 245, 0.76);
 }
-#navleft h3{
+
+#navleft h3 {
     font-family: 'Kaushan Script';
-    color:#ff7001;
+    color: #ff7001;
     letter-spacing: 2px;
     font-weight: 500;
 }
-#navCenter{
-    
+
+#navCenter {
+
     font-family: font1medium;
     display: flex;
-    transform: translate(-50%,0%);
+    transform: translate(-50%, 0%);
 }
-#navCenter h3{
+
+#navCenter h3 {
     margin-left: 12%;
     letter-spacing: 1px;
     font-weight: 400;
 }
-#navCenter h3 a{
+
+#navCenter h3 a {
     text-decoration: none;
     color: whitesmoke;
 }
-#navRight button{
-    height:2.5vw;
-    width:7vw;
+
+#navRight button {
+    height: 2.5vw;
+    width: 7vw;
     border: none;
-    background-color:  #ff7001;
+    background-color: #ff7001;
     color: whitesmoke;
     letter-spacing: 1px;
 }
-#navRight button:hover{
-    background-color:  #c95b08;
+
+#navRight button:hover {
+    background-color: #c95b08;
 }
-#navRight button a{
-    text-decoration:none;
-    color: whitesmoke;   
+
+#navRight button a {
+    text-decoration: none;
+    color: whitesmoke;
 }
-#page1{
+
+#page1 {
     /* font-family: gilroy; */
     height: calc(100vh - 5vw);
     width: 100vw;
-    position:relative;
-    color:whitesmoke ;
+    position: relative;
+    color: whitesmoke;
     position: relative;
 }
-#page1Center{
+
+#page1Center {
     height: 37%;
     width: 32%;
     /* background-color: aqua; */
     position: absolute;
     top: 35%;
     left: 50%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
     justify-content: center;
     text-align: center;
 }
-#page1Center h1{
+
+#page1Center h1 {
     font-family: font1ExtraBold;
     font-size: 5.4vw;
     font-weight: 800;
     word-spacing: 3px;
     text-shadow: 2px 2px #ff0000;
 }
-@font-face {
-    font-family: font1semiBold;
-    src: url("fonts/Gilroy-SemiBold.ttf");
-}
-#page1Center p{
-    font-family: font1semiBold;
-    margin-top: 40px;
+
+#page1Center p {
+    font-family: font1Regular;
+    margin-top: 30px;
     font-size: 1.3vw;
     word-spacing: 1px;
 }
-#page1ButtonIn{
+
+#page1ButtonIn {
     z-index: -1;
     height: 40px;
     width: 155px;
@@ -138,27 +161,31 @@ html,body{
     /* font-family: gilroy; */
     text-transform: capitalize;
     position: absolute;
-    top: 31.6vh;
+    top: 30vh;
     left: 10.4vw;
     background-color: #ff7001;
     text-align: center;
     padding: 10px;
 }
-#page1ButtonIn:hover{
-    
+
+#page1ButtonIn:hover {
+
     background-color: #d76f1f;
 }
-#page1ButtonIn a{
+
+#page1ButtonIn a {
     text-decoration: none;
     color: white;
 }
-#page1Center h4{
+
+#page1Center h4 {
     filter: hue-rotate(-80deg);
     color: white;
     letter-spacing: 1px;
     font-weight: 550;
 }
-#page1Left{
+
+#page1Left {
     position: absolute;
     top: 37%;
     left: 0%;
@@ -168,30 +195,33 @@ html,body{
     font-size: 0.8vw;
     height: 9%;
     width: 25%;
-    transform: rotate(-90deg)  ;
+    transform: rotate(-90deg);
     padding: 14px;
     letter-spacing: 1px;
 }
-#page1Img{
+
+#page1Img {
     position: absolute;
     right: 4%;
     bottom: -0.5vw;
     height: 95%;
     width: 33%;
-    background-image:url("images/GovindRobotFace-removebg-preview.png");
+    background-image: url("images/GovindRobotFace-removebg-preview.png");
     background-position: center;
     background-size: cover;
 }
-.page1Bottom{
+
+.page1Bottom {
     height: 25%;
     width: 15%;
-    padding-top:34px;
-    padding-left:25px;
+    padding-top: 34px;
+    padding-left: 25px;
     position: absolute;
     top: 63vh;
     justify-content: space-between;
 }
-.page1Bottoma{
+
+.page1Bottoma {
     height: 25%;
     width: 16%;
     position: absolute;
@@ -201,24 +231,30 @@ html,body{
     background-size: cover;
     background-position: center;
 }
-.page1Bottom h1{
+
+.page1Bottom h1 {
     font-family: gilroy;
-    font-size:1.2vw;
+    font-size: 1.2vw;
     font-weight: 500;
 }
-.page1Bottom P{
-    font-size:0.9vw;
+
+.page1Bottom P {
+    font-size: 0.9vw;
     margin-top: 6PX;
     justify-items: right;
 }
-#page1Bottom1 , #page1Bottom1a{
+
+#page1Bottom1,
+#page1Bottom1a {
     left: 19%;
 }
-#page1Bottom2 , #page1Bottom2a{
+
+#page1Bottom2,
+#page1Bottom2a {
     left: 41%;
 }
 
-#page2bg{
+#page2bg {
     height: 100vh;
     width: 100vw;
     position: absolute;
@@ -227,48 +263,52 @@ html,body{
     filter: blur(12px);
 }
 
-#page2{
+#page2 {
     height: 100vh;
     width: 100vw;
     overflow-y: hidden;
     position: relative;
     /* font-family: gilroy; */
-    background-image: linear-gradient(to right , #1a3262,#0f67b0);
-    
+    background-image: linear-gradient(to right, #1a3262, #0f67b0);
+
 }
-#page2 h1{
-    position:absolute;
-    top:15%;
+
+#page2 h1 {
+    position: absolute;
+    top: 15%;
     left: 50%;
-    transform: translate(-50%,0%);
+    transform: translate(-50%, 0%);
     width: 50vw;
     text-align: center;
     font-size: 3.2vw;
     color: white;
     font-weight: 600;
 }
-#page2H4{
-    position:absolute;
-    top:26%;
+
+#page2H4 {
+    position: absolute;
+    top: 26%;
     left: 50%;
-    transform: translate(-50%,0%);
+    transform: translate(-50%, 0%);
     width: 40vw;
     text-align: center;
     /* font-size: 3.2vw; */
     color: white;
     font-weight: 400;
 }
-#page2Down{
-    display:flex;
+
+#page2Down {
+    display: flex;
     width: 100vw;
     position: absolute;
     top: 50%;
     left: 0;
-    justify-content:space-around;
+    justify-content: space-around;
     padding-left: 10%;
     padding-right: 10%;
 }
-.page2Div{
+
+.page2Div {
     height: 16vw;
     width: 25vw;
     border: 2px solid white;
@@ -276,48 +316,55 @@ html,body{
     background-color: rgba(255, 255, 255, 0.103);
     border-radius: 10px;
 }
-.page2DivImg{
+
+.page2DivImg {
     height: 3vw;
     width: 2.8vw;
     position: absolute;
-    top:2.5vw;
-    transform: translate(0,-50%);
+    top: 2.5vw;
+    transform: translate(0, -50%);
     color: #fff;
     background-size: cover;
     background-position: center;
     margin-top: 1vw;
     margin-left: 3vw;
 }
+
 /* website link- https://www.iconfinder.com/search?q=house */
-#page2DivImg1{
+#page2DivImg1 {
     background-image: url("https://cdn0.iconfinder.com/data/icons/human-brain-process-line-filled-blue/154/shield_cross_Human_Brain_Process-512.png");
 }
-#page2DivImg2{
+
+#page2DivImg2 {
     background-image: url("https://cdn0.iconfinder.com/data/icons/human-brain-process-line-filled-blue/154/Emotion_face_thoughtful_Human_Brain_Process-512.png");
 }
-#page2DivImg3{
+
+#page2DivImg3 {
     background-image: url("https://cdn0.iconfinder.com/data/icons/essentials-solid-glyphs-vol-1/100/House-Home-Property-256.png");
 }
+
 .page2DivH2 {
     font-size: 1.5vw;
     width: 15vw;
-    position: absolute;  
-    top: 3.4vw; 
-    left : calc(10px + 2vw + 2vw + 2.3vw);
-    transform: translate(0%,-50%);
+    position: absolute;
+    top: 3.4vw;
+    left: calc(10px + 2vw + 2vw + 2.3vw);
+    transform: translate(0%, -50%);
     color: white;
     font-weight: 500;
 }
-.page2DivH3{
+
+.page2DivH3 {
     font-size: 1.1vw;
-    position: absolute;  
-    top: 7vw; 
+    position: absolute;
+    top: 7vw;
     left: 2.5vw;
     width: 20vw;
     font-weight: 500;
     color: rgba(255, 255, 255, 0.616);
 }
-.page2DivH4{
+
+.page2DivH4 {
     position: absolute;
     bottom: 10%;
     left: 8vw;
@@ -328,25 +375,29 @@ html,body{
     color: #fff;
     margin-left: 10px;
 }
-#pag2Last{
+
+#pag2Last {
     position: absolute;
     top: 92%;
-    transform: translate(-50% , -50%);
+    transform: translate(-50%, -50%);
     left: 50%;
     display: flex;
     text-align: center;
     justify-content: space-between;
-    width:calc(10px * 5 * 1.5) ;
+    width: calc(10px * 5 * 1.5);
 }
-.page2LastDiv{
+
+.page2LastDiv {
     height: 10px;
     width: 10px;
     background-color: #fff;
     border-radius: 50%;
 }
-#page2Last3{
+
+#page2Last3 {
     background-color: #ff7001;
 }
+
 /* .page2Arrow{
     font-size: 3vw;
     position: absolute;
@@ -359,7 +410,7 @@ html,body{
 #page2RightArrow{
     left: 93%;
 } */
-#page3{
+#page3 {
     height: 100vh;
     width: 100vw;
     background-color: black;
@@ -367,21 +418,24 @@ html,body{
     /* font-family: gilroy; */
     position: relative;
 }
-#page3Left{
+
+#page3Left {
     width: 50%;
     height: 100%;
-    background-color:#393f4b;
+    background-color: #393f4b;
     color: #fff;
 }
-#page3LeftImg{
+
+#page3LeftImg {
     height: 85%;
     width: 100%;
     background-image: url("https://janprahar.com/static/c1e/client/79375/uploaded/ed3e69328073eddb019653925da99447.jpg");
-    background-position: -10% 0% ;
+    background-position: -10% 0%;
     background-size: cover;
     position: relative;
 }
-#page3Logo{
+
+#page3Logo {
     font-family: 'The Nautigal', cursive;
     color: aliceblue;
     font-weight: 400;
@@ -391,25 +445,29 @@ html,body{
     display: flex;
     letter-spacing: 1px;
 }
-#page3LogoImg{
+
+#page3LogoImg {
     height: 2vw;
     width: 2vw;
     background-image: url("images/lodo_img.png");
     background-size: cover;
     background-position: center;
-    margin-right: 1px; 
+    margin-right: 1px;
     margin-top: -5px;
 }
-#page3Logo h4{
+
+#page3Logo h4 {
     font-weight: 300;
     letter-spacing: 2px;
 }
-#page3LeftDown{
+
+#page3LeftDown {
     height: 15%;
     width: 100%;
     display: flex;
 }
-.page3leftDownP{
+
+.page3leftDownP {
     width: calc(50% / 3);
     height: 50%;
     text-align: center;
@@ -418,20 +476,23 @@ html,body{
     font-weight: 500;
     letter-spacing: 1px;
 }
-#page3LeftDownDiv{
+
+#page3LeftDownDiv {
     background-color: #ff7001;
     height: 100%;
     width: 50%;
     text-align: center;
     padding-top: 3vw;
-    color:black ;
+    color: black;
     font-weight: 600;
     letter-spacing: 2px;
 }
-#page3LeftDownDiv h3{
+
+#page3LeftDownDiv h3 {
     font-weight: 600;
 }
-#page3Right{
+
+#page3Right {
     height: 100%;
     width: 50%;
     padding: 10%;
@@ -439,7 +500,8 @@ html,body{
     background-image: url("https://images.unsplash.com/photo-1637946175559-22c4fe13fc54?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1527&q=80");
     background-size: 110%;
 }
-#page3RightTop{
+
+#page3RightTop {
     position: absolute;
     top: 0%;
     right: 2%;
@@ -451,31 +513,35 @@ html,body{
     padding-top: 22px;
     color: rgba(255, 136, 0, 0.849);
 }
-#page3RightTop h4{
+
+#page3RightTop h4 {
     font-weight: 400;
 }
-#page3Right h1{
+
+#page3Right h1 {
     font-family: 'Ibarra Real Nova';
     position: absolute;
     top: 40%;
     width: 60%;
     left: 50%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
     font-size: 5.5vw;
     letter-spacing: 2px;
     color: aliceblue;
 }
-#page3Right p{
+
+#page3Right p {
     position: absolute;
     top: 60%;
     width: 62%;
     left: 50%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
     font-size: 1vw;
     letter-spacing: 2px;
     color: aliceblue;
 }
-#page3RightBottom{
+
+#page3RightBottom {
     height: 12%;
     width: 37%;
     position: absolute;
@@ -486,81 +552,94 @@ html,body{
     justify-content: center;
     padding-top: 4%;
     background-color: aliceblue;
-} 
-#page3RightBottom h3{
+}
+
+#page3RightBottom h3 {
     font-weight: 500;
 }
-#page4{
+
+#page4 {
     height: 105vh;
     width: 100vw;
     /* font-family: gilroy; */
     position: relative;
     padding-left: 4%;
     padding-right: 4%;
-    background-image: linear-gradient(#13407a,#463ba3,rgb(83, 16, 128));
+    background-image: linear-gradient(#13407a, #463ba3, rgb(83, 16, 128));
     color: aliceblue;
 }
-#page4Up{
+
+#page4Up {
     height: 29vh;
     padding-top: 4%;
     border-bottom: 2px solid rgb(74, 25, 121);
 }
-#page4UpLeft h4{
+
+#page4UpLeft h4 {
     font-size: 1vw;
     font-weight: 500;
     letter-spacing: 1px;
 }
-#page4UpLeft h1{
+
+#page4UpLeft h1 {
     font-size: 3vw;
     width: 35%;
-    font-weight:bold;
+    font-weight: bold;
     margin-top: 10px;
     font-family: 'Ibarra Real Nova';
     letter-spacing: 1px;
     word-spacing: 2px;
 }
-#page4UpRight{
+
+#page4UpRight {
     position: absolute;
     top: 8%;
     right: 5%;
     width: 20%;
     justify-content: right;
 }
-#page4UpRight p{
+
+#page4UpRight p {
     justify-content: right;
     text-align: right;
     font-size: 1.2vw;
 }
-#page4Center{
+
+#page4Center {
     height: 61vh;
     width: 92vw;
     /* background-color: rgb(104, 66, 17); */
     position: relative;
     display: flex;
-    justify-content: space-between;   
+    justify-content: space-between;
 }
-.page4Center1_3{
+
+.page4Center1_3 {
     height: 40vh;
     width: 15%;
-    background-color:#7444fa ;    
-    margin-top: 15vh;  
+    background-color: #7444fa;
+    margin-top: 15vh;
     padding-left: 25px;
     padding-right: 25px;
 }
-#page4Center2Right{
+
+#page4Center2Right {
     padding-top: 3vw;
     width: 35%;
     height: 90%;
     margin-left: 60%;
     position: relative;
 }
-#page4Center2Right h1{
+
+#page4Center2Right h1 {
     margin-bottom: 5px;
 }
-#page4Center2Right p{
+
+#page4Center2Right p {
     font-size: 0.9vw;
 }
-#page4Center2Right button{
+
+#page4Center2Right button {
     font-size: 1vw;
     position: absolute;
     bottom: 5%;
@@ -571,41 +650,49 @@ html,body{
     color: aliceblue;
     border: 1px solid white;
 }
-.page4Center1_3 h1{
+
+.page4Center1_3 h1 {
     font-size: 6vw;
     font-family: 'The Nautigal', cursive;
 }
-.page4Center1_3 h4{
+
+.page4Center1_3 h4 {
     margin-top: 60%;
     font-weight: 400;
     letter-spacing: 1px;
 }
-.page4Center1_3 p{
+
+.page4Center1_3 p {
     margin-top: 5%;
     font-weight: 400;
     font-size: 1vw;
     letter-spacing: 1px;
 }
-.page4Center1_3Div{
+
+.page4Center1_3Div {
     height: 2px;
     width: 20px;
     background-color: aliceblue;
     margin-top: 10%;
     border-radius: 2px;
 }
-#page4Center1{
+
+#page4Center1 {
     margin-left: 5%;
 }
-#page4Center3{
+
+#page4Center3 {
     margin-right: 5%;
 }
-#page4Center2{
+
+#page4Center2 {
     height: 40vh;
     width: 50%;
-    background-color:rgb(255, 136, 0) ; 
+    background-color: rgb(255, 136, 0);
     margin-top: 15vh;
 }
-#page4Center2Left{
+
+#page4Center2Left {
     height: 55vh;
     width: 22vw;
     background-image: url("https://images.unsplash.com/photo-1620712943543-bcc4688e7485?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1530&q=80");
@@ -616,22 +703,26 @@ html,body{
     left: 26vw;
     border-bottom: 2vh solid rgb(124, 54, 255);
 }
-#page4CeneterMenu{
+
+#page4CeneterMenu {
     position: absolute;
     right: 7%;
     top: 7%;
     font-size: 1.5vw;
     font-weight: 400;
 }
-#page4Center2LeftLeft{
+
+#page4Center2LeftLeft {
     display: flex;
     padding: 20PX;
 }
-#page4Center2LeftLeft h3{
+
+#page4Center2LeftLeft h3 {
     margin-top: 15px;
     font-weight: 400;
 }
-#page4Down{
+
+#page4Down {
     position: relative;
     height: 10vh;
     width: 100vw;
@@ -639,102 +730,118 @@ html,body{
     justify-content: space-between;
     padding-right: 10%;
 }
-.page4DownLF{
+
+.page4DownLF {
     display: flex;
     padding: 5px;
 }
-.page4DButton{
+
+.page4DButton {
     margin-top: -3px;
     height: 2vw;
     width: 2vw;
     background-color: rgb(255, 136, 0);
     padding: 6px;
 }
-.page4DownLF h4{
+
+.page4DownLF h4 {
     font-weight: 400;
     margin-left: 2vw;
     margin-right: 2vw;
     letter-spacing: 1px;
 }
-#Page4DownCeter{
+
+#Page4DownCeter {
     display: flex;
 }
-#Page4DownCeter{
+
+#Page4DownCeter {
     /* background-color: #011570; */
     height: 10px;
     width: calc(7vw * 3);
     margin-top: 4vw;
 }
-.page4DCDiv{
+
+.page4DCDiv {
     height: 5px;
     width: 6vw;
     background-color: rgb(124, 54, 255);
     border-radius: 5px;
     margin-left: 15px;
 }
-#page4DC2{
-    background-color:rgb(255, 136, 0) ;
+
+#page4DC2 {
+    background-color: rgb(255, 136, 0);
 }
-#page5{
+
+#page5 {
     height: 100vh;
     width: 100vw;
     position: relative;
     background-image: url("https://lmg-labmanager.s3.amazonaws.com/assets/articleNo/28027/aImg/50769/engineers-at-ubc-get-under-the-skin-of-ionic-skin-m.webp");
     background-size: cover;
 }
-#page5 h1{
+
+#page5 h1 {
     width: 20vw;
     position: absolute;
     top: 10vh;
     left: 5vw;
-    font-family:cursive ;
+    font-family: cursive;
     font-weight: 500;
-    color:rgb(124, 54, 255);
+    color: rgb(124, 54, 255);
     font-size: 2.8vw;
 }
-#page5Up{
+
+#page5Up {
     height: 36%;
     width: 48%;
     position: absolute;
-    top:50%;
-    left:70%;
-    transform: translate(-50%,-50%);
+    top: 50%;
+    left: 70%;
+    transform: translate(-50%, -50%);
     text-align: center;
     justify-content: center;
     background-color: rgba(255, 255, 255, 0.5);
 }
-#page5Up h2{
+
+#page5Up h2 {
     font-family: font1semiBold;
     margin-top: 4.5vw;
     margin-bottom: 5.5vw;
 
 }
-#page5Div{
+
+#page5Div {
     position: absolute;
     top: 58%;
     left: 50%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
 
 }
-#email{
+
+#email {
     height: 2.4vw;
     width: 15vw;
     border: 1px solid rgb(124, 54, 255);
-    padding-left:8px ;
+    padding-left: 8px;
     outline: none;
 }
-#submit{
+
+#submit {
     height: 2.4vw;
     width: 7.5vw;
     border: 1px solid rgb(124, 54, 255);
     background-color: rgb(124, 54, 255);
     color: aliceblue;
 }
-#page5Up p{
+
+#page5Up p {
     font-size: 0.9vw;
     letter-spacing: 0.5px;
 }
-#page5Down{
+
+#page5Down {
     height: 10%;
     width: 100%;
     position: absolute;
@@ -744,7 +851,7 @@ html,body{
     justify-content: center; */
     /* padding: 20px; */
     font-size: 1.4vw;
-    background-image: -webkit-linear-gradient(#b6c3d3e0,rgba(124, 54, 255, 0.842));
+    background-image: -webkit-linear-gradient(#b6c3d3e0, rgba(124, 54, 255, 0.842));
     color: white;
 
 
@@ -755,18 +862,21 @@ html,body{
     align-items: center;
     text-align: center;
 }
-#page5Down h3{
-    font-weight:400;
+
+#page5Down h3 {
+    font-weight: 400;
 
 }
-#page6{
+
+#page6 {
     height: 70vh;
     width: 100vw;
     position: relative;
     background-color: rgb(124, 54, 255);
     color: #fff;
 }
-#page6H1{
+
+#page6H1 {
     position: absolute;
     width: 30vw;
     top: 15%;
@@ -776,7 +886,8 @@ html,body{
     font-size: 3vw;
     font-weight: 400;
 }
-#page6Down{
+
+#page6Down {
     position: absolute;
     display: flex;
     width: 100vw;
@@ -784,39 +895,46 @@ html,body{
     /* background-color: #ff0000; */
     justify-content: space-around;
 }
-.page6Div{
+
+.page6Div {
     width: 20vw;
     letter-spacing: 1px;
 }
-.page6Div h2{
+
+.page6Div h2 {
     color: rgb(255, 136, 0);
     letter-spacing: 2px;
 }
-.page6Div h1{
+
+.page6Div h1 {
     margin-top: 0.4vw;
     margin-bottom: 0.6vw;
     font-size: 2vw;
 }
-#page6Img img{
+
+#page6Img img {
     height: 20vw;
-    margin-left: 12vw;  
+    margin-left: 12vw;
 }
-@media only screen and (max-width: 800px){
-#main {
-    display: none;
-}
-#minWidth{
-    font-family: font1Regular;
-    display: flex;
-    width: 100%;
-    height: 100%;
-    background-color: rgb(220, 233, 245);
-    justify-content: center;
-    align-items: center;
-    align-self: center;
-    /* text-align: center; */
-}
-#minWidth h2{
-    width: 80%;
-}
+
+@media only screen and (max-width: 800px) {
+    #main {
+        display: none;
+    }
+
+    #minWidth {
+        font-family: font1Regular;
+        display: flex;
+        width: 100%;
+        height: 100%;
+        background-color: rgb(220, 233, 245);
+        justify-content: center;
+        align-items: center;
+        align-self: center;
+        /* text-align: center; */
+    }
+
+    #minWidth h2 {
+        width: 80%;
+    }
 }
